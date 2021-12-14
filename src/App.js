@@ -63,11 +63,11 @@ function App() {
       <Router>
         <Header title="To-Do Manager" searchBar={true} />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/todo-app/">
             <AddTodo addTodo={addTodo} />
             <Todos todos={todos} onDelete={onDelete} />
           </Route>
-          <Route exact path="/about" >
+          <Route exact path="/todo-app/about" >
             <About/>
           </Route>
         </Switch>
